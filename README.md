@@ -22,10 +22,9 @@ Bu proje, C dilinde geliştirilmiş; geometrik hesaplamalar, dosya yönetimi ve 
 mkdir build
 cd build
 cmake ..
-cd ..
 cmake --build veya sadece make
 ```
 
 ### Klasik derleme (GCC)
 ```bash
-gcc main.c hesap.c sifreleme.c silme.c -o GeoCal
+gcc main.c hesaplama.c sifreleme.c Dosya_Silme.c -o GeoCal
