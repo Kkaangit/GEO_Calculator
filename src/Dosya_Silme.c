@@ -14,7 +14,6 @@
 
 void silme(){
     char silinen[100];
-    //system("color a");
     system("date /T && time /t");
     system("color b");
     D_Listesi;
