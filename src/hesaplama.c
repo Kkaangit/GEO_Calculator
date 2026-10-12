@@ -34,25 +34,25 @@ void hesaplama(){
     float *uzunluk_1 =NULL, *uzunluk_2 = NULL, *sonuc = NULL;
     char devam;
 
-    printf("alan olcumu icin 1 hacim olcumu icin 2'ye basiniz\n");
+    printf("Alan olcumu icin 1 hacim olcumu icin 2'ye basiniz\n");
     scanf("%d", &cins);
     if (cins == alan) {
-        printf("sekil sec dortgenler icin 1'e daire icin 2'ye kure icin 3'e silindir icin 4'e basiniz\n");
+        printf("Sekil sec dortgenler icin 1'e daire icin 2'ye kure icin 3'e silindir icin 4'e basiniz\n");
         scanf("%d", &ikiboyut);
         if (ikiboyut != dörtgen && ikiboyut != daire && ikiboyut != küre_A && ikiboyut != silindir_A) {
-            perror("yanlis veya hatali secim"); exit(1);
+            perror("Yanlis veya hatali secim"); exit(1);
         }
     }else if (cins == hacim) {
-        printf("sekil sec kup icin 1'e kare prizma icin 2'ye kure icin 3'e basiniz silindir icin 4'e basiniz\n");
+        printf("Sekil sec kup icin 1'e kare prizma icin 2'ye kure icin 3'e basiniz silindir icin 4'e basiniz\n");
         scanf("%d", &ucboyut);
         if (ucboyut != küp && ucboyut != kare_prizma && ucboyut != küre_H && ucboyut != silindir_H) {
-            perror("yanlis ve hatali secim"); exit(1);
+            perror("Yanlis ve hatali secim"); exit(1);
         }
-    }else{perror("yanlis veya hatali secim"); exit(1);}
-    printf("uzunluk cinsi sec : secenekler metre icin 1'e santimetre icin 2'ye milimetre icin 3'e basiniz\n");
+    }else{perror("Yanlis veya hatali secim"); exit(1);}
+    printf("Uzunluk cinsi sec : secenekler metre icin 1'e santimetre icin 2'ye milimetre icin 3'e basiniz\n");
 
     scanf("%d",&sayi);
-    printf("uzunluk birimi olarak:\t");
+    printf("Uzunluk birimi olarak:\t");
     secenek(sayi);
 
     do {
@@ -68,7 +68,7 @@ void hesaplama(){
         scanf("%f",&uzunluk_1[parca_sayisi]);
         if ((cins == alan && (ikiboyut == dörtgen || ikiboyut == silindir_A)) ||
             (cins == hacim && (ucboyut == kare_prizma || ucboyut == silindir_H))){
-            printf("ikinci bir uzunluk\n ");
+            printf("ikinci bir uzunluk\n");
             scanf("%f",&uzunluk_2[parca_sayisi]);
             }
         else {
