@@ -117,7 +117,7 @@ void hesaplama(){
     fprintf(toplam,"Seçilen geometrik şekil: %s",Dosya_2D(ikiboyut));
 }else {
         fprintf(toplam,"Hacim ölçümü yapıldı\n");
-        fprintf(toplam,"Secilen geometrik şekil: %s", Dosya_3D(ucboyut));
+        fprintf(toplam,"Secilen geometrik şekil: %s\n", Dosya_3D(ucboyut));
     }
 fprintf(toplam,"Islem zamanı %s",asctime(tm));
             fclose(toplam);
