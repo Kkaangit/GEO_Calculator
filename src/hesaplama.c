@@ -33,7 +33,10 @@ void hesaplama(){
     int parca_sayisi = 0;
     float *uzunluk_1 =NULL, *uzunluk_2 = NULL, *sonuc = NULL;
     char devam;
-
+    
+    time_t anlık = time(NULL);
+    struct tm *tm = localtime(&anlık);
+    
     printf("Alan olcumu icin 1 hacim olcumu icin 2'ye basiniz\n");
     scanf("%d", &cins);
     if (cins == alan) {
@@ -116,6 +119,7 @@ void hesaplama(){
         fprintf(toplam,"Hacim ölçümü yapıldı\n");
         fprintf(toplam,"Secilen geometrik şekil: %s", Dosya_3D(ucboyut));
     }
+fprintf(toplam,"Islem zamanı %s",asctime(tm));
             fclose(toplam);
 
     free(uzunluk_1); free(uzunluk_2); free(sonuc);
